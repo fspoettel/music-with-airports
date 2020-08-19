@@ -2,6 +2,7 @@ import argparse
 import concurrent.futures.thread
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 import sys
+import time
 import mpv
 
 def parse_args():
@@ -23,6 +24,9 @@ class Player:
         # see: https://git.io/JJNFW
         if player._get_property("idle-active"):
           self.stop()
+        else:
+          time.sleep(1)
+
     except mpv.ShutdownError:
       raise
     except:
