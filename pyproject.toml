@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "music-with-airports"
 version = "0.1.0"
-description = ""
+description = "simultaneously listen to air traffic control chatter & music via mpv"
 authors = ["Felix Spöttel <1682504+fspoettel@users.noreply.github.com>"]
 
 [tool.poetry.dependencies]

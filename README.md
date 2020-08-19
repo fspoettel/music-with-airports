@@ -1,6 +1,6 @@
 # `music-with-airports`
 
-> simultaneously listen to airport radio chatter and music via mpv
+> simultaneously listen to air traffic control chatter & music via mpv 
 
 ## Prerequisites
 
@@ -12,8 +12,9 @@
 ## Install
 
 1. Clone this repository
-2. Install dependencies from `pyproject.toml`
-3. Make sure `run.py` is executable
+2. Install prerequisites
+3. Install dependencies from `pyproject.toml`
+4. Make sure `run.py` is executable
 
 ## Use
 
@@ -21,7 +22,7 @@
 # basic usage
 ./run.py -a [live_atc_feed_code] [url]
 ```
-`url` can be anything that `mpv` can play (e.g. YouTube videos, YouTube playlists, Soundcloud, local files). `-a` is optional and expects the id of a [LiveATC.net](liveatc.net/) feed. See below for instructions on how to find these. The player defaults to the Tokyo Airport Arrival/Departure feed.
+`url` can be anything that `mpv` can play (e.g. YouTube videos, YouTube playlists, Soundcloud, local files). `-a` is optional and expects the id of a [LiveATC.net](https://www.liveatc.net/) feed. See below for instructions on how to find these. The player defaults to the _Tokyo Airport Arrival / Departure_ (`rjtt_app_dep`) feed.
 
 ```sh
 # example: Dublin Airport + "Eno/Budd - Music for Airports 2"
@@ -40,7 +41,7 @@
 
 ## Finding airport codes
 
-To print a list of popular airport feeds and their codes, go to the [LiveATC.net top feeds page](https://www.liveatc.net/topfeeds.php) and run the following script in your browser console.
+To print a list of popular airport feeds and their codes, go to the [LiveATC.net top feeds page](https://www.liveatc.net/topfeeds.php) and run the following script in your browser console:
 
 ```js
 function getAirportCodes() {
@@ -64,3 +65,9 @@ function getAirportCodes() {
 
 getAirportCodes()
 ```
+
+You can then pass the airport feed of your choice to the script via the `-a` flag.
+
+## Credits
+
+Air traffic control feeds are provided by [LiveATC.net](https://www.liveatc.net/). If you enjoy this listening experience, consider [donating](https://www.liveatc.net/donations.php).
