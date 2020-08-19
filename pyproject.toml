@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "music-with-airports"
+version = "0.1.0"
+description = ""
+authors = ["Felix Spöttel <1682504+fspoettel@users.noreply.github.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+python-mpv = "^0.5.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
