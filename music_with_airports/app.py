@@ -44,10 +44,12 @@ class Player:
   def start(self):
     args = parse_args()
 
+    print("ATC feeds are provided by https://www.liveatc.net")
+
     with ThreadPoolExecutor(max_workers=2) as executor:
       playback_futures = [
         executor.submit(self.play, args.url),
-        executor.submit(self.play, "http://d.liveatc.net/" + args.a)
+        executor.submit(self.play, "https://www.liveatc.net/play/{}.pls".format(args.a))
       ]
 
       try:
