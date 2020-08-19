@@ -1,5 +1,4 @@
 import argparse
-import concurrent.futures.thread
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 import sys
 import time
