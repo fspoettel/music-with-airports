@@ -44,7 +44,9 @@ class Player:
   def start(self):
     args = parse_args()
 
+    print("=====")
     print("ATC feeds are provided by https://www.liveatc.net")
+    print("=====")
 
     with ThreadPoolExecutor(max_workers=2) as executor:
       playback_futures = [
