@@ -5,8 +5,8 @@
 ## Prerequisites
 
 * `python^3.7`
-* `mpv`
 * `youtube-dl`
+* `mpv`
 * `libmpv` (see: https://git.io/JJNbG if this is not present after `mpv` installation)
 
 ## Install
@@ -15,6 +15,8 @@
 2. Install prerequisites
 3. Install dependencies from `pyproject.toml`
 4. Make sure `run.py` is executable
+
+This project uses [poetry](https://python-poetry.org/docs/) for dependency management which can also be used to install and run the script.
 
 ## Use
 
